@@ -20,6 +20,12 @@ A comprehensive collection of digital logic design modules and testbenches writt
   * **Stage 2:** A single 5th 4x1 MUX selects from the intermediate lines using the upper select bits (`sel[3:2]`) to route the final output.
 * **Key Specs:** 16-bit input, 4-bit select line, 1-bit output.
 
+### 4. 16-bit ALU Adder with Status Flags (`alu_adder.v` & `alutest.v`)
+* **Description:** A 16-bit Arithmetic Logic Unit (ALU) module performing addition along with real-time status flag generation.
+* **Key Features:**
+  * **16-bit Addition:** Calculates 16-bit sum (`Z`) and handles bit-overflow using vector concatenation `{carry, Z}`.
+* **Testbench (`alutest.v`):** Includes dynamic value assignments, `$monitor` tasks, and VCD file generation (`$dumpfile`) for waveform analysis.
+
 *(More modules will be added here as the repository grows...)*
 
 ---
